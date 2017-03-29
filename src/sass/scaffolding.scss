@@ -5,7 +5,7 @@
   text-align: center;
   position: relative; 
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 3.3333%;
   padding-bottom: 3.3333%;
   font-family: "Museo Cyrl", "Arial", sans-serif;
   font-weight: 700;
@@ -25,7 +25,6 @@
     @extend %gradient;
   }
 }
-
 html {
   height: 100%;
   font-size: $fz;
@@ -34,11 +33,7 @@ html {
 body {  
   min-width: 320px;
   word-wrap: break-word;
-  font-family: $ff ;
-
-//background-color: ;
-//background-image: data-uri("");    
-  
+  font-family: $ff ;  
 }
 
 img {
@@ -47,9 +42,10 @@ img {
   border: none;
 }
 svg {
-  fill:#4a90e2;
+  fill:#4a90e2;    
+  fill-rule:evenodd;
+  fill:#df77ff;
 }
-
 .container {  
   max-width: 1200px;
   padding: 0 10px;

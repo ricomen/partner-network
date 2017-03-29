@@ -1,17 +1,83 @@
 div.page-main
   .container
-    section.about
-      .about__row
-        p.about__text Мы занимаемся поставкой и продажей трендовых товаров уже 5 лет
+    section.about      
+      .about__img
+        img(src="img/content/about-us.jpg" width="380" height="402" alt="О нас" title="О нас")
+      .about__text
+        p Мы занимаемся поставкой и продажей трендовых товаров уже 5 лет
         p Постоянно тестируем новые товары, выявляем тренды и поставляем их напрямую от поставщика
         p Наши маркетологи Разрабатывают и запускают сайт, настраивают рекламные каналыю
-    section.advantage
-      h2.advantage__title Почему с нами выгодно сотрудничать
+    section.works
+      h2.works__title Чем Вы будете заниматься
+      p.works__description Вы будете продавать популярные товары через интернет
+      .works__row
+        .works__item
+          +icon("seo",100)
+          span СЕО, контекстная реклама, социальные сети, Авито
+        .works__item
+          +icon("eshop",100)
+          span Интернет магазин
+        .works__item
+          +icon("callback",100)
+          span Звонок клиенту
+        .works__item
+          +icon("shiping",100)
+          span Отправляете товара
+        .works__item
+          +icon("money",100)
+          span Получаете деньги
+  section.prices
+    .container
+      h2.prices__title Наши Пакеты
+      .prices__row
+        .prices__col
+          h3.prices__col-title Старт
+          ul.prices__list
+            li.prices__item Настройка и подключение сайт landing page
+            li.prices__item Обучение
+            li.prices__item Первая партия товара на <b>20 000р.</b>
+            li.prices__item Подключение 1 канала рекламы<br><span>Яндекс-Директ</span>
+          footer.prices__col-footer
+            span 50 000 руб.
+            a.btn.gradient Отправить заявку
+        .prices__col
+          h3.prices__col-title Станрдарт
+          ul.prices__list
+            li.prices__item Настройка и подключение сайт landing page
+            li.prices__item Обучение
+            li.prices__item Первая партия товара на <b>25 000р.</b>
+            li.prices__item Подключение 2 каналов рекламы<br><span>Яндекс-Директ и Google Adworks</span>
+          ul.prices__list
+            li.prices__item Подключение новых трендовых товаров <strong>со скидкой 30%</strong>
+            li.prices__item Аккаунт-поддержка от нашего маркетингового агенства на первый месяц             
+          footer.prices__col-footer
+            span 75 000 руб.
+            a.btn.gradient Отправить заявку
+        .prices__col
+          h3.prices__col-title Премиум
+          ul.prices__list
+            li.prices__item Настройка и подключение сайт landing page
+            li.prices__item Обучение
+            li.prices__item Первая партия товара на <b>35 000р.</b>
+            li.prices__item Подключение 5 каналов рекламы<br><span>Яндекс-Директ и Google Adworks, таргетированная реклама в соц. сетях, РСЯ, продвижение в Instagramm</span>
+          ul.prices__list
+            li.prices__item Подключение новых трендовых товаров <strong>со скидкой 50%</strong>
+            li.prices__item Аккаунт-поддержка от нашего маркетингового агенства на первый месяц
+          footer.prices__col-footer
+            span 100 000 руб.
+            a.btn.gradient Отправить заявку
+  section.advantages
+    .container
+      h2.advantages__title Почему с нами выгодно сотрудничать
+      ul.advantages__list
+        li.advantages__item Сроки окупаемости – учитывая минимальные вложения, Вы окупитесь за первый месяц
+        li.advantages__item <b>Возможность масштабирования</b> - вы будете продавать не только товар, который мы подключили Вам изначально, - мы постоянно тестируем новые товары, выявляем тренды, дальше у вас будет возможность постоянно подключать новые товары, которые будут появляться, таким образом, зарабатывать больше
+        li.advantages__item <b>Перспективные ниши</b> – мы продаем трендовый товар, на который уже есть спрос либо который набирает популярность
+        li.advantages__item Предоставляем полное обучение по осуществлению продаж через интернет-магазин 
+        li.advantages__item Вы получаете свой бизнес, сами зарабатываете, мы не контролируем вашу выручку и не берем роялти
+        li.advantages__item <b>Быстрый старт</b> - на запуск сайта, рекламных каналов, закуп первой партии товара нужно 5 дней, - Вы сможете получать первые заявки уже на 6й день
+        li.advantages__item <b>Маркетинговая поддержка</b> - наши маркетологи настроят и адаптируют все рекламные каналы под Ваш регион и будут полностью сопровождать Ваш проект первый месяц
+        li.advantages__item Мы сами занимаемся поставками товара от производителя, Вы будете получать товар по самым выгодным оптовым ценам
+        li.advantages__item Высокомаржинальный товар
 
-    +icon("callback",100)
-    +icon("checked",100)
-    +icon("eshop",100)
-    +icon("money",100)
-    +icon("seo",100)
-    +icon("shiping",100)
 

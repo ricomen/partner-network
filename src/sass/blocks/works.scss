@@ -1,0 +1,47 @@
+.works {
+  padding-bottom: 80px;
+  &__title {
+    @extend %heading;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    position: relative;
+    text-align: center;
+    width: 17%;
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../img/svg/arrow.svg") no-repeat;
+      width: 50px;
+      height: 10px;
+      display: block;
+      right: -27%;
+      top: 50px;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    .icon {
+      margin-bottom: 65px;
+      fill: #4a90e2;
+    }
+    span {
+      margin-top: auto;
+      display: block;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 300;
+    }
+  }
+  &__description {
+    text-align: center;    
+    margin-bottom: 65px;
+  }
+}
