@@ -1,0 +1,12 @@
+.page-footer {
+  padding: 25px 0;
+  background: #333;
+  a {
+    color: #fff;
+  }
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,8 @@
+.advantage {  
+  background-image: url("../img/advantage-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__title {
+    @extend %heading;
+  }
+}

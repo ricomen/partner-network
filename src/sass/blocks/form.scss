@@ -1,0 +1,43 @@
+.form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+  max-width: 380px;
+  min-height: 290px;
+  padding: 40px;
+  font-family: $ff;
+  border-radius: 25px;
+  font-size: 18px;
+  line-height: 1.2;
+  background: rgba(255,255,255,.2);
+  box-sizing: border-box;
+  &--whiteBg {
+    background-color: #fff;
+  }
+  &--whiteBg &__field{
+    border: 2px solid #e1e1e1;
+  }
+  &__title {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+  &__field {
+    margin-bottom: 30px;
+    padding: 14.2px 30px;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+  }
+  &__succes {
+    display: none;
+    text-align: center;
+    line-height: 30px;
+  }
+}
