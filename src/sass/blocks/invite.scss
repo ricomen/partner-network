@@ -1,0 +1,13 @@
+.invite {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: #717aff;
+  &__title {
+    @extend %heading;
+    padding: 0;
+    color: #fff;
+    &::after {
+      display: none;
+    }
+  }
+}

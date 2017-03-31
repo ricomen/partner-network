@@ -10,11 +10,11 @@ $ff: "Museo Sans", "Arial", sans-serif;
 $pathToIcon: "../img/icons";          //путь до иконок
 $font-folder: "../fonts";             //путь к шрифтам
 
-$small: "screen and (max-width: 575px)";
-$phone: "screen and (max-width: 767px)";
-$tablet: "screen and (max-width: 992px)";
-$desktop: "screen and (max-width: 1199px)";
-$large: "screen and (max-width: 1800px)";
+// @mixin small: "screen and(max-width: 575px)";
+// @mixin phone: "screen and (max-width: 767px)";
+// @mixin tablet: "screen and (max-width: 992px)";
+// @mixin desktop: "screen and (max-width: 1199px)";
+// @mixin large: "screen and (max-width: 1800px)";
 
 
 //Работа с цветами

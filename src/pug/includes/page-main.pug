@@ -12,19 +12,24 @@ div.page-main
       p.works__description Вы будете продавать популярные товары через интернет
       .works__row
         .works__item
-          +icon("seo",100)
+          i
+            +icon("seo",100)
           span СЕО, контекстная реклама, социальные сети, Авито
         .works__item
-          +icon("eshop",100)
+          i
+            +icon("eshop",100)
           span Интернет магазин
         .works__item
-          +icon("callback",100)
+          i
+            +icon("callback",100)
           span Звонок клиенту
         .works__item
-          +icon("shiping",100)
+          i
+            +icon("shiping",100)
           span Отправляете товара
         .works__item
-          +icon("money",100)
+          i
+            +icon("money",100)
           span Получаете деньги
   section.prices
     .container
@@ -41,7 +46,7 @@ div.page-main
             span 50 000 руб.
             a.btn.gradient Отправить заявку
         .prices__col
-          h3.prices__col-title Станрдарт
+          h3.prices__col-title Стандарт
           ul.prices__list
             li.prices__item Настройка и подключение сайт landing page
             li.prices__item Обучение
@@ -79,5 +84,38 @@ div.page-main
         li.advantages__item <b>Маркетинговая поддержка</b> - наши маркетологи настроят и адаптируют все рекламные каналы под Ваш регион и будут полностью сопровождать Ваш проект первый месяц
         li.advantages__item Мы сами занимаемся поставками товара от производителя, Вы будете получать товар по самым выгодным оптовым ценам
         li.advantages__item Высокомаржинальный товар
-
-
+  section.feedback
+    .container
+      h2.feedback__title Отзывы наших клиентов
+      .feedback__slider
+        .feedback__slider-container        
+          .feedback__slider-item
+            .feedback__slider-content
+              .youtube(id="LE9_SBvoaZY")
+          .feedback__slider-item
+            .feedback__slider-content
+              .youtube(id="LE9_SBvoaZY")
+  section.region
+    .container
+      h2.region__title Мы открываем одно представительство в регионе 
+      .region__row
+        .region__col
+          .form.form--whiteBg
+            form.form__item(action="/" method="post")
+              h3.form__title Проверьте,<br> Свободен ли ваш город?
+              input.form__field(type="text" name="name" placeholder="Имя")
+              input.form__field(type="text" name="phone" placeholder="Телефон")
+              button.btn.gradient(type="submit") Отправить заявку
+            .form__succes
+              span Спасибо за Вашу заявку!
+              .form__succes__img
+                +icon("checked", 120)
+              span Наш менеджер свяжется с Вами в  ближайшее время!
+  section.invite
+    .container
+      h2.invite__title Присоединяйся к нашей команде!
+      .form.form--invite
+        form.form__item(action="/" method="post")
+          input.form__field(type="text" name="name" placeholder="Имя")
+          input.form__field(type="text" name="phone" placeholder="Телефон")
+          button.btn.btn--dark-blue(type="submit") Отправить заявку

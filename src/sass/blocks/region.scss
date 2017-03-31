@@ -1,0 +1,35 @@
+.region {
+  padding: 60px 0 110px; 
+  background-color: #463d73;  
+  background-image:  url("../img/man.png"),
+                     url("../img/map-bg.png");
+  background-repeat: no-repeat;
+  background-position: 30% bottom, center;
+  background-size: auto, contain;  
+  @media screen and (max-width: 992px){
+    background-image:  url("../img/map-bg.png");
+    background-position: center;
+    background-size: contain;
+  }
+  &__title {
+    color: #fff;
+    @extend %heading;
+    &::after {
+      background-color: #fff;
+      background-image: none;
+    }
+  }
+  &__row {    
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &__col {
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
+}
