@@ -1,0 +1,55 @@
+.form {
+  .center();
+  max-width: 380px;
+  padding: 40px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  &__field[type=text] {
+    width: 100%;
+    padding: 0 30px;
+    display: block;
+    font-weight: 500;     
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-bottom: 30px;
+  }
+  input {
+    width: 100%;
+    line-height: 50px;
+    font-size: 18px;
+    font-family: @MuseoSans;
+    border: none;
+    outline: none;
+  }
+  &__inner-wrap {
+    display: none;
+  }  
+  &__succes {
+    svg {
+      display: block;
+      .center();
+      margin-bottom: 19px;
+    }
+    &-msg {
+      display: block;
+      line-height: 1.66;   
+      text-align: center;    
+    }
+    @media @phone {
+      svg {
+        display: none;
+      }
+      &-msg {
+        margin-top: 60px;
+      }
+    }
+  }
+  &--transparent {
+    min-height: 290px;
+    background: rgba(255, 255, 255, 0.2);
+    @media @phone {
+      padding: 30px; 
+      min-height: 270px;   
+    }
+  }
+}

@@ -1,96 +1,16 @@
-
 $(document).ready(function () {
- 
-  $(".feedback__slider-container").slick({
-    dots: true,
-    infinite: false,
-    responsive: [
-    {
-      breakpoint: 1150,
-      settings: {
-        arrows: false
-      }
+  //Navigation
+  $(".no-js").removeClass("no-js");
+  $(".main-nav__toggle").on("click", function(){
+    $(this).toggleClass('main-nav__toggle--close');
+    $(".main-nav__list").slideToggle(400);
+  });
+  $(window).resize(function(){
+    if($(".main-nav__list").is(":hidden")) {
+      $(".main-nav__list").removeAttr('style');      
     }
-    
-  ]   
-
-});
-$(".works__row").slick({
-  infinite: false,
-  arrows: false,
-  slidesToShow: 5,  
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3
-              
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ] 
-});
-  
-//     $(".prices__row").slick({    
-//     arrows: false, 
-//     slidesToShow: 3,
-//     infinite: false,
-//     responsive: [
-
-//     {
-//       breakpoint: 1024,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 1, 
-//       }
-//     },
-//     {
-//       breakpoint: 576,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     },
-//     {
-//       breakpoint: 320,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }
-//     // You can unslick at a given breakpoint now by adding:
-//     // settings: "unslick"
-//     // instead of a settings object
-//   ]   
-// });
-
-
-  // var catpos = $(".categories").position();
-  // $("#to-category").on("click", function () {
-  //   console.log(Math.floor(catpos.top));
-  //   $("html, body").animate({
-  //     scrollTop: catpos.top
-  //   }, 700);
-  // });
-
-
+  });  
+  //jQery End
 });
 
 

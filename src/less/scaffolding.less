@@ -1,0 +1,52 @@
+html {
+  font-size: @font-size;
+}
+body {
+  margin: 0;
+  font-family: @MuseoSans;
+  word-wrap: break-word;
+  //color: ;
+  //background-color: ;
+  //background-image: data-uri("");  
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  .center();  
+  box-sizing: border-box;
+  @media @phone {
+    padding: 0 20px;
+  }
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-family: @MuseoCyrl;
+}
+a {
+  text-decoration: none;
+}
+// градиент для текста
+// -------------------
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent;
+// -------------------
+// a {  
+//   text-decoration: none;
+//   background-color: transparent;
+//   &:hover,
+//   &:focus {
+//     color: $link-color--hover;
+//     text-decoration: underline;
+//   }
+// }
+
+//от переполнения тпекстом
+// white-space: nowrap;
+// overflow: hidden;
+// text-overflow: ellipsis;
