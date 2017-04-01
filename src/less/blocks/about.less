@@ -1,0 +1,40 @@
+.about {
+  padding: 44px 0;
+  display: flex;
+  justify-content: space-between;  
+  @media @tablet {
+    flex-direction: column;
+  }          
+  &__col {    
+    flex-basis: 50%;
+    &:nth-child(1) {      
+      text-align: center;      
+      img {
+        vertical-align: bottom;
+      }
+        @media @tablet {
+        order: 2;
+      }
+    }
+    &:nth-child(2) { 
+      margin: auto; 
+      @media @tablet {
+        margin-bottom: 20px;
+      }    
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 24px;
+    line-height: 1.66;
+    font-weight: 300;
+  }
+  &__item {
+    margin-bottom: 44px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
