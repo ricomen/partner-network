@@ -98,6 +98,49 @@ $(document).ready(function () {
       }
     }]
   });
+
+  //Калькулятор прибыли
+  schet();
+  $(".range__slider").change(function(){
+    schet();    
+  });
+  var sr = 2940;
+  var str = 220;
+  var fondz = 8000;
+  var usn = 6;
+  var colz = 70.5;
+  function schet() {
+    console.log($(".range__slider").val());
+      var sites = $(".range__slider").val()
+      var col = Math.round(colz*sites);
+      var vir = Math.round(col*sr);
+      var rek = Math.round(col*str);
+      var seb = Math.round(vir/2);
+      var fond = Math.round(fondz*sites);
+      var nal =  Math.round(vir/100*usn);
+      var clear = Math.round(vir  - (seb+rek+nal+fond));
+      $('#colz').html(XFormatPrice(col));
+      $('#marg').html(XFormatPrice(vir));
+      $('#rek').html(XFormatPrice(rek));
+      $('#seb').html(XFormatPrice(seb));
+      $('#fond').html(XFormatPrice(fond));
+      $('#nal').html(XFormatPrice(nal));
+      $('.calculation__result-val').html(XFormatPrice(clear));
+  }                
+  function XFormatPrice(_number) {
+      var decimal=0;
+      var separator=' ';
+      var decpoint = '.';
+      var format_string = '#';
+
+      var r=parseFloat(_number);
+
+      var exp10=Math.pow(10,decimal);
+      r=Math.round(r*exp10)/exp10;
+      rr=Number(r).toFixed(decimal).toString().split('.');
+      b=rr[0].replace(/(\d{1,3}(?=(\d{3})+(?:\.\d|\b)))/g,"\$1"+separator);
+      r=(rr[1]?b+ decpoint +rr[1]:b);
+      return format_string.replace('#', r);  }    
   //jQery End
 });
 

@@ -71,6 +71,52 @@
           .price__item-bottom
             .price__item-cost 100 000 руб.
             a.btn.btn--gradient(href="#") Отправить заявку
+  section.profit
+    .container
+      h2.profit__title Рассчитайте свой ежемесячный доход по кол-ву интернет-магазинов
+      .calculation
+        form.calculation__form
+          .range-wrap
+            input(type="range" class="range__slider" min="1" max="10" step="1" value="1")
+            .label-wrap
+              label 1
+              label 2
+              label 3
+              label 4
+              label 5
+              label 6
+              label 7
+              label 8
+              label 9
+              label 10          
+        .calculation__param
+          .table
+            .table-row
+              .table-cell.name Количество заказов:
+              .table-cell.val(id="colz")
+            .table-row
+              .table-cell.name Выручка:
+              .table-cell.val(id="marg")
+            .table-row
+              .table-cell.name Средний чек: 
+              .table-cell.val(id="sr") 2940 руб.
+            .table-row
+              .table-cell.name Рекламный бюджет:
+              .table-cell.val(id="rek") 
+          .table
+            .table-row
+              .table-cell.name Себестоимость товара:
+              .table-cell.val(id="seb")
+            .table-row
+              .table-cell.name Ст. Привлеч: 
+              .table-cell.val(id="stp") 220 руб.
+            .table-row
+              .table-cell.name Фонд оплаты труда: 
+              .table-cell.val(id="fond")
+            .table-row
+              .table-cell.name Налог (УСН 6 %):
+              .table-cell.val(id="nal")            
+        .calculation__result Ваша прибыль: <span class="calculation__result-val"></span>
   section.features
     .container
       h2.features__title Почему с нами выгодно работать

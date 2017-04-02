@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Главная</title>
+    <title>Партнерская сеть</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
@@ -141,6 +141,69 @@
                 <div class="price__item-cost">100 000 руб.</div><a class="btn btn--gradient" href="#">Отправить заявку</a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="profit">
+        <div class="container">
+          <h2 class="profit__title">Рассчитайте свой ежемесячный доход по кол-ву интернет-магазинов</h2>
+          <div class="calculation">
+            <form class="calculation__form">
+              <div class="range-wrap">
+                <input class="range__slider" type="range" min="1" max="10" step="1" value="1">
+                <div class="label-wrap">
+                  <label>1</label>
+                  <label>2</label>
+                  <label>3</label>
+                  <label>4</label>
+                  <label>5</label>
+                  <label>6</label>
+                  <label>7</label>
+                  <label>8</label>
+                  <label>9</label>
+                  <label>10          </label>
+                </div>
+              </div>
+            </form>
+            <div class="calculation__param">
+              <div class="table">
+                <div class="table-row">
+                  <div class="table-cell name">Количество заказов:</div>
+                  <div class="table-cell val" id="colz"></div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell name">Выручка:</div>
+                  <div class="table-cell val" id="marg"></div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell name">Средний чек: </div>
+                  <div class="table-cell val" id="sr">2940 руб.</div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell name">Рекламный бюджет:</div>
+                  <div class="table-cell val" id="rek"> </div>
+                </div>
+              </div>
+              <div class="table">
+                <div class="table-row">
+                  <div class="table-cell name">Себестоимость товара:</div>
+                  <div class="table-cell val" id="seb"></div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell name">Ст. Привлеч: </div>
+                  <div class="table-cell val" id="stp">220 руб.</div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell name">Фонд оплаты труда: </div>
+                  <div class="table-cell val" id="fond"></div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell name">Налог (УСН 6 %):</div>
+                  <div class="table-cell val" id="nal">           </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculation__result">Ваша прибыль: <span class="calculation__result-val"></span></div>
           </div>
         </div>
       </section>
