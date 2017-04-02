@@ -4,6 +4,13 @@
   padding: 40px;
   border-radius: 25px;
   box-sizing: border-box;
+  &__title {
+    font-size: 24px;
+    line-height: 1.66;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 500;
+  }
   &__field[type=text] {
     width: 100%;
     padding: 0 30px;
@@ -22,9 +29,10 @@
     outline: none;
   }
   &__inner-wrap {
-    display: none;
+    // display: none;
   }  
   &__succes {
+    display: none;
     svg {
       display: block;
       .center();
@@ -36,6 +44,9 @@
       text-align: center;    
     }
     @media @phone {
+      .form__title {
+        margin-top: 80px;
+      }
       svg {
         display: none;
       }
@@ -51,5 +62,38 @@
       padding: 30px; 
       min-height: 270px;   
     }
+  }
+  &--whiteBg {
+    min-height: 400px;
+    background-color: #fff; 
+
+  }
+  &--whiteBg &__field[type=text] {
+    border: 1px solid #e1e1e1;
+  }
+  &--row {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    .form__field[type=text], input {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 0;
+      max-width: 300px;
+     @media @tablet {
+      margin-bottom: 30px;
+      &:last-child {
+        margin: 0;
+      }
+     }
+     @media @phone {
+      display: block;
+      width: 100%;
+     }
+    }
+   .form__field[type=text] {
+      margin-right: 20px;
+   }
+
   }
 }

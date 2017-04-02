@@ -91,7 +91,50 @@
         .slider  
           .slideer__item
             .slider__fit
-              .youtube(id="Ft_teGEwkJ8" data-params="modestbranding=1&showinfo=0&controls=0")
+              .youtube(id="oPhfe_o_m64" data-params="modestbranding=1&showinfo=0&controls=0")
           .slideer__item
             .slider__fit
-              .youtube(id="LE9_SBvoaZY" data-params="modestbranding=1&showinfo=0&controls=0")
+              .youtube(id="Ft_teGEwkJ8" data-params="modestbranding=1&showinfo=0&controls=0")
+  section.owner
+    .container
+      h2.owner__title Наши учредители
+      .owner__row
+        .owner__col
+          .owner__img
+            img(src="img/content/owners/owner-1.jpg", alt="Громов Артур Валерьевич")
+          h3.owner__col-title Громов Артур Валерьевич
+          ul.owner__col-list
+            li.owner__col-item Соучредитель компании Opt-trend
+            li.owner__col-item 9 лет занимается бизнесом
+            li.owner__col-item В 2006 году основал маркетинговое агенство Promoimpuls
+            li.owner__col-item C 2011 года занимается поставкой и продажей трендовых товаров
+        .owner__col
+          .owner__img
+            img(src="img/content/owners/owner-2.jpg", alt="Корсакова Екатерина Ильинишна")
+          h3.owner__col-title Корсакова Екатерина Ильинишна
+          ul.owner__col-list
+            li.owner__col-item Соучредитель компании Opt-trend
+            li.owner__col-item Владелец сети кальянных Underground по Москве
+            li.owner__col-item Основатель пиар-агенства Point
+  section.check-city
+    .container
+      h2.check-city__title Мы открываем одно представительство в регионе
+      .check-city__row
+        .check-city__col
+          form.form.form--whiteBg(action="/" method="POST")
+            .form__inner-wrap
+              div.form__title Проверьте,<br> свободен ли ваш город?
+              input(type="text" class="form__field" name="name" placeholder="Имя" required)
+              input(type="text" class="form__field" name="phone" placeholder="Телефон" required)
+              input(type="submit" class="btn" value="Отправить заявку")
+            .form__succes
+              div.form__title Спасибо за вашу заявку!
+              +icon("succes", 120)
+              span.form__succes-msg Наш менеджер свяжется с вами в ближайшее время!
+  section.invite
+    .container
+      h2.invite__title Присоединяйся к нашей команде!
+      form.form.form--row(action="/" method="POST")
+        input(type="text" class="form__field" name="name" placeholder="Имя" required)
+        input(type="text" class="form__field" name="phone" placeholder="Телефон" required)
+        input(type="submit" class="btn btn--blue" value="Отправить заявку")

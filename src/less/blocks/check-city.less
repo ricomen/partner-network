@@ -1,0 +1,34 @@
+.check-city {
+  padding: 60px 0 105px;
+  background-color: @violet;
+  background:  url('../img/man.png'),
+               url("../img/map-bg.png");
+  background-repeat: no-repeat;
+  background-position: 30% bottom, center;
+  background-size: auto, contain;
+  @media @phone {
+    .container {
+      padding: 0 10px;
+    }
+  }
+  @media @phone {
+    background-image: url("../img/map-bg.png");
+  }
+  &__title {
+    .heading;
+    color: #fff;
+    &::after {
+      background: #fff;
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: flex-end;
+    @media @phone {
+      justify-content: center;
+    }
+  }
+  &__col {
+    flex-basis: 380px;
+  }
+}
