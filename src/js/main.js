@@ -9,12 +9,97 @@ $(document).ready(function () {
     if($(".main-nav__list").is(":hidden")) {
       $(".main-nav__list").removeAttr('style');      
     }
-  });  
+  });
+
+  //price__item height
+    function setEqualHeight(columns) {
+      var tallestcolumn = 0;
+      columns.each(
+      function() {
+        currentHeight = $(this).height();
+        if(currentHeight > tallestcolumn) {
+          tallestcolumn = currentHeight;
+        }
+      });
+      columns.height(tallestcolumn);
+    }
+    $(document).ready(function() {
+      setEqualHeight($(".price__item"));
+    });
+
+  //slick slider
+  $(".works__list").slick({
+      infinite: false,
+      slidesToShow: 5,
+      responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3        
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]      
+  });
+
+  $(".price__list").slick({      
+      infinite: false,
+      slidesToShow: 3,
+      prevArrow: "<button type=\"button\" class=\"price__btn price__btn--prev\"></button>",
+      nextArrow: "<button type=\"button\" class=\"price__btn price__btn--next\"></button>",
+      responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2        
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]      
+  });
+  //feedback slider
+  $(".slider").slick({
+    dots: true,
+    prevArrow: "<button type=\"button\" class=\"slider__btn slider__btn--prev\"></button>",
+    nextArrow: "<button type=\"button\" class=\"slider__btn slider__btn--next\"></button>",
+     responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        arrows: false
+      }
+    }]
+  });
   //jQery End
 });
-
-
-
 
 'use strict';
 function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}

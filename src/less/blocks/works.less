@@ -1,5 +1,61 @@
 .works {
+  width: 100%;
+  padding-bottom: 80px;
   &__title {
-
+    text-align: center;
+    .heading;
+  }
+  &__description {
+    margin: 0 0 65px 0;    
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.66;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;  
+    @media @small {
+      flex-direction: column;
+      align-items: center;
+      .works__item {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+    }  
+  }
+  &__item {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 300;
+    width: 17%;
+    &:focus {      
+      outline: none;
+    }
+    i {
+      position: relative;
+      display: block;
+      margin-bottom: 65px;
+      width: 80px;
+      height: 80px;
+      .center;
+      &::after {
+        position: absolute;
+        content: "";
+        right: -100%;        
+        top: 50%;
+        margin-top: -10px;
+        width: 50px;
+        height: 10px;        
+        background: data-uri("../img/svg/arrow.svg") no-repeat;
+      }
+      svg {
+        fill: @blue;
+      }
+    }
+    &:last-child i::after {
+      display: none;
+    }
   }
 }

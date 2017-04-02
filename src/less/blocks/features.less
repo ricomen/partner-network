@@ -1,0 +1,30 @@
+.features {
+  padding: 60px 0;
+  background: #000 url("../img/advantage-bg.jpg") no-repeat center;
+  background-size: cover;
+  @media @phone {
+    .container{
+      padding: 0;
+    }
+  }
+  &__title {
+    .heading;
+  }
+  &__list {    
+    background: #fff;
+    border-radius: 25px;
+    margin: 0;
+    padding: 6.66%;
+    list-style: none;
+    @media @phone {
+      padding: 3.33%;
+    }
+  }
+  &__item {
+    .list-style-custom;
+    margin-bottom: 30px;
+    &:last-child{
+      margin: 0;
+    }
+  }
+}
