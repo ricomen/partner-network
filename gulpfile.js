@@ -179,7 +179,7 @@ gulp.task('clean', function() {
 
 //Оптимиация изображений
 gulp.task('img', function() {
-  return gulp.src('src/img/*.*')
+  return gulp.src('src/img/**/*.*')
     .pipe(cache(imagemin({
       interlaced: true,
       progressive: true,

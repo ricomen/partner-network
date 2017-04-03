@@ -8,7 +8,7 @@
           li.about__item Мы занимаемся поставкой и продажей трендовых товаров уже 5 лет. 
           li.about__item Постоянно тестируем новые товары, выявляем тренды и поставляем их напрямую от поставщика.
           li.about__item Наши маркетологи разрабатывают и запускают сайты, настраивают рекламные каналы.
-    section.works
+    section.works#works
       .works__about
         h2.works__title Чем вы будете заниматься
         p.works__description Вы будете продавать популярные товары через собственный интернет-магазин:
@@ -42,7 +42,7 @@
               p Яндекс-Директ
           .price__item-bottom
             .price__item-cost 50 000 руб.
-            a.btn.btn--gradient(href="#") Отправить заявку
+            a.btn.btn--gradient(href="#form__invite") Отправить заявку
         .price__item
           h3.price__item-title Стандарт
           ul.price__item-list
@@ -56,7 +56,7 @@
             li Аккаунт-поддержка от нашего маркетингового агенства на первый месяц
           .price__item-bottom
             .price__item-cost 75 000 руб.
-            a.btn.btn--gradient(href="#") Отправить заявку
+            a.btn.btn--gradient(href="#form__invite") Отправить заявку
         .price__item
           h3.price__item-title Премиум
           ul.price__item-list
@@ -70,7 +70,7 @@
             li Аккаунт-поддержка от нашего маркетингового агенства на первый месяц
           .price__item-bottom
             .price__item-cost 100 000 руб.
-            a.btn.btn--gradient(href="#") Отправить заявку
+            a.btn.btn--gradient(href="#form__invite") Отправить заявку
   section.profit
     .container
       h2.profit__title Рассчитайте свой ежемесячный доход по кол-ву интернет-магазинов
@@ -93,31 +93,31 @@
           .table
             .table-row
               .table-cell.name Количество заказов:
-              .table-cell.val(id="colz")
+              .table-cell.val(id="colz") 71 руб.
             .table-row
               .table-cell.name Выручка:
-              .table-cell.val(id="marg")
+              .table-cell.val(id="marg") 208740 руб.
             .table-row
               .table-cell.name Средний чек: 
               .table-cell.val(id="sr") 2940 руб.
             .table-row
               .table-cell.name Рекламный бюджет:
-              .table-cell.val(id="rek") 
+              .table-cell.val(id="rek") 15620 руб.
           .table
             .table-row
               .table-cell.name Себестоимость товара:
-              .table-cell.val(id="seb")
+              .table-cell.val(id="seb") 104370 руб.
             .table-row
               .table-cell.name Ст. Привлеч: 
               .table-cell.val(id="stp") 220 руб.
             .table-row
               .table-cell.name Фонд оплаты труда: 
-              .table-cell.val(id="fond")
+              .table-cell.val(id="fond") 8000 руб.
             .table-row
               .table-cell.name Налог (УСН 6 %):
-              .table-cell.val(id="nal")            
+              .table-cell.val(id="nal") 12524 руб. 
         .calculation__result Ваша прибыль: <span class="calculation__result-val"></span>
-  section.features
+  section.features#features
     .container
       h2.features__title Почему с нами выгодно работать
       ul.features__list
@@ -181,6 +181,6 @@
     .container
       h2.invite__title Присоединяйся к нашей команде!
       form.form.form--row(action="/" method="POST")
-        input(type="text" class="form__field" name="name" placeholder="Имя" required)
+        input(type="text" id="form__invite" class="form__field" name="name" placeholder="Имя" required)
         input(type="text" class="form__field" name="phone" placeholder="Телефон" required)
         input(type="submit" class="btn btn--blue" value="Отправить заявку")

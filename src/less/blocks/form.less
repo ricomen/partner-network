@@ -19,6 +19,9 @@
     box-sizing: border-box;
     border-radius: 25px;
     margin-bottom: 30px;
+    &:focus {      
+      background-color: lightgreen;
+    }
   }
   input {
     width: 100%;
@@ -75,6 +78,10 @@
     margin: 0;
     padding: 0;
     max-width: 100%;
+    @media @phone {
+      max-width: 300px;
+      .center;
+    }
     .form__field[type=text], input {
       display: inline-block;
       vertical-align: middle;
@@ -94,6 +101,5 @@
    .form__field[type=text] {
       margin-right: 20px;
    }
-
   }
 }
