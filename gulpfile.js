@@ -108,7 +108,7 @@ gulp.task('less', function() {
   gulp.src('src/less/style.less')
     .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     .pipe(less())
-    .pipe(autoprefixer(['last 4 versions'], { cascade: true }))
+    .pipe(autoprefixer(['last 10 versions'], { cascade: true }))
     .pipe(csscomb())
     .pipe(gulp.dest('src/css'))
 });
