@@ -190,7 +190,7 @@ gulp.task('img', function() {
 });
 
 //Выгружаем проект в build
-gulp.task('build', ['clean', 'img', 'less', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'css-libs', 'scripts'], function() {
 
   var buildCss = gulp.src([ 
       'src/css/*.css',
